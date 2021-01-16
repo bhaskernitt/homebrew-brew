@@ -8,7 +8,7 @@ class ChargbeeCli < Formula
   url "http://github.com/bhaskernitt/homebrew-brew/blob/main/chargbee-cli.rb"
   version "2.16.0"
   sha256 "e5b28ba7e29492fc4d38dbc0399cf627cb5492e26fbefe5b374d681dssdd5b2eb"
-  depends_on "node"
+  depends_on "python3"
 
   def install
     libexec.install Dir["*"]
