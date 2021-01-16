@@ -4,9 +4,9 @@ require "language/python"
 class ChargbeeCli < Formula
   desc "unleash the chargebee-cli"
   homepage "https://github.com/bhaskerstreet/chargebee-cli"
-  url "https://twilio-cli-prod.s3.amazonaws.com/twilio-v2.16.0/twilio-v2.16.0.tar.gz"
+  url "http://github.com/bhaskernitt/homebrew-brew/blob/main/chargbee-cli.rb"
   version "2.16.0"
-  sha256 "e5b28ba7e29492fc4d38dbc0399cf627cb5492e26fbefe5b374d681dd4d5b2eb"
+  sha256 "e5b28ba7e29492fc4d38dbc0399cf627cb5492e26fbefe5b374d681dssdd5b2eb"
   depends_on "node"
 
   def install
