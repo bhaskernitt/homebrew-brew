@@ -1,6 +1,6 @@
 
 
-require "language/python"
+require "language/python3"
 
 class ChargbeeCli < Formula
   desc "unleash the chargebee-cli"
