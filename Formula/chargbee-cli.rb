@@ -1,7 +1,3 @@
-
-
-require "language/python3"
-
 class ChargbeeCli < Formula
   include Language::Python::Virtualenv
   desc "unleash the chargebee-cli"
