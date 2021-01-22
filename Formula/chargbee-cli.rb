@@ -8,8 +8,16 @@ class ChargbeeCli < Formula
   depends_on "python@3.9"
 
   def install
-    libexec.install Dir["*"]
-    bin.install_symlink libexec/"bin/chargbee-cli"
+    venv = virtualenv_create(libexec, "python3")
+    system libexec/"bin/pip", "install", "-v", "-r", "requirements.txt",
+                              "--ignore-installed", buildpath
+    system libexec/"bin/pip", "uninstall", "-y", "chargebee-cli"
+    venv.pip_install_and_link buildpath
+    system libexec/"bin/pip", "uninstall", "-y", "pyinstaller"
+  end
+
+  on_linux do
+    depends_on "libyaml"
   end
 
   def post_install
