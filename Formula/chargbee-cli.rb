@@ -9,9 +9,9 @@ class ChargbeeCli < Formula
 
   def install
     venv = virtualenv_create(libexec, "python3")
+    system libexec/"bin/pip", "uninstall", "-y", "chargebee-cli"
     system libexec/"bin/pip", "install", "-v", "-r", "requirements.txt",
                               "--ignore-installed", buildpath
-    system libexec/"bin/pip", "uninstall", "-y", "chargebee-cli"
     venv.pip_install_and_link buildpath
   end
 
