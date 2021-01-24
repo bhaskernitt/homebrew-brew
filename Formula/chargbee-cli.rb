@@ -13,7 +13,6 @@ class ChargbeeCli < Formula
                               "--ignore-installed", buildpath
     system libexec/"bin/pip", "uninstall", "-y", "chargebee-cli"
     venv.pip_install_and_link buildpath
-    system libexec/"bin/pip", "uninstall", "-y", "pyinstaller"
   end
 
   on_linux do
