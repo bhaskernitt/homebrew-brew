@@ -219,6 +219,7 @@ class ChargbeeCli < Formula
   
   
   def install
+    system libexec/"bin/pip", "install", "pip", "setuptools", "wheel", buildpath
     virtualenv_install_with_resources
   end
 
