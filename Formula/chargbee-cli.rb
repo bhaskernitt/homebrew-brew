@@ -4,7 +4,7 @@ class ChargbeeCli < Formula
   homepage "https://github.com/bhaskerstreet/chargebee-cli"
   url "https://github.com/bhaskernitt/chargebee-cli/archive/chargebee-cli-0.0.19-release.tar.gz"
   version "0.0.19"
-  sha256 "44fdd18af2f1183f9ed0fe3011086598be7d3f33230d95bc79c9514ac4ea2ab5"
+  sha256 "b8a5fb42243acc0b21b483ac80d53796c368f571b8a374de878384967ee7560c"
   depends_on "python@3.9"
   resource "bleach" do
       url "https://files.pythonhosted.org/packages/04/2c/8e256291cfeaefb72d1dafc888b1ad447e754d8062520b41f1d3ffa7e139/bleach-3.2.1.tar.gz"
