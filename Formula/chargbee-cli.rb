@@ -219,7 +219,12 @@ class ChargbeeCli < Formula
   
   
   def install
-    virtualenv_install_with_resources
+    venv = virtualenv_create(libexec, "python3")
+    system libexec/"bin/pip", "install", "-v", "-r", "requirements.txt",
+                              "--ignore-installed", buildpath
+    system libexec/"bin/pip", "uninstall", "-y", "awscli"
+    venv.pip_install_and_link buildpath
+    # virtualenv_install_with_resources
   end
 
   on_linux do
