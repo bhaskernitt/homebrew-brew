@@ -2,7 +2,7 @@ class ChargbeeCli < Formula
   include Language::Python::Virtualenv
   desc "unleash the chargebee-cli"
   homepage "https://github.com/bhaskerstreet/chargebee-cli"
-  url "https://github.com/bhaskernitt/chargebee-cli/archive/chargebee-cli-0.0.19-release.tar.gz"
+  url "https://github.com/bhaskernitt/chargebee-cli/archive/v0.0.21.tar.gz"
   version "0.0.19"
   sha256 "b8a5fb42243acc0b21b483ac80d53796c368f571b8a374de878384967ee7560c"
   depends_on "python@3.9"
