@@ -15,6 +15,7 @@ class ChargbeeCli < Formula
                               "--ignore-installed", buildpath
     # system libexec/"bin/pip3", "uninstall", "-y", "chargebee-cli"
     venv.pip_install_and_link buildpath
+    system "make", "install"
     # virtualenv_install_with_resources
   end
 
