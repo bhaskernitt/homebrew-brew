@@ -1,4 +1,4 @@
-class ChargbeeCli < Formula
+class ChargebeeCli < Formula
   include Language::Python::Virtualenv
   desc "unleash the chargebee-cli"
   homepage "https://github.com/bhaskerstreet/chargebee-cli"
