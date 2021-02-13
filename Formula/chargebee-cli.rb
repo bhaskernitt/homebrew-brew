@@ -4,7 +4,7 @@ class ChargebeeCli < Formula
   homepage "https://github.com/bhaskerstreet/chargebee-cli"
   url "https://github.com/bhaskernitt/chargebee-cli/archive/v0.0.23.tar.gz"
   version "0.0.23"
-  sha256 "0959ce9fcfe2f6d6366338ad267108e6fbd17b2b316aed7f0f695c1269c60291"
+  sha256 "089106b67e810cb2a4685f0d81caf564f1b15c308d2ad5fa469040782d053138"
   depends_on "python@3.9"
   
   
