@@ -4,7 +4,7 @@ class Van < Formula
   homepage "https://github.com/bhaskerstreet/vaccine-availability-notifier"
   url "https://github.com/bhaskernitt/vaccine-availability-notifier/archive/0.0.3.tar.gz"
   version "0.0.3"
-  sha256 "089106b67e810cb2a4685f0d81caf564f1b15c308d2ad5fa469040782d053138"
+  sha256 "e821fc20f5efe1e365b811060868cba7e4280c231401b2b8f26fe84daf5c735b"
   depends_on "python@3.9"
   
   
