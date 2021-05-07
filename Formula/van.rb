@@ -1,4 +1,4 @@
-class ChargebeeCli < Formula
+class Van < Formula
   include Language::Python::Virtualenv
   desc "unleash the chargebee-cli"
   homepage "https://github.com/bhaskerstreet/chargebee-cli"
@@ -15,7 +15,7 @@ class ChargebeeCli < Formula
                               "--ignore-installed", buildpath
     # system libexec/"bin/pip3", "uninstall", "-y", "chargebee-cli"
     venv.pip_install_and_link buildpath
-    bin.install_symlink libexec/"bin/cb"
+    bin.install_symlink libexec/"bin/van"
 
   end
 
@@ -26,13 +26,8 @@ class ChargebeeCli < Formula
   def post_install
     ohai "*********************************************************"
     ohai "*                                                       *"
-    ohai "* To get started, please create a chargbee-cli profile: *"
-    ohai "*                                                       *"
-    ohai "*     cb login                                          *"
-    ohai "*                                                       *"
-    ohai "*     OR                                                *"
-    ohai "*                                                       *"
-    ohai "*     cb configure profile                              *"
+    ohai "* To get started, please execute the help command       *"
+    ohai "*    van --help                                         *"
     ohai "*                                                       *"
     ohai "*********************************************************"
   end
