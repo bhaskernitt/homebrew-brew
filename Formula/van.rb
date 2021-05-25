@@ -2,8 +2,8 @@ class Van < Formula
   include Language::Python::Virtualenv
   desc "book slot for ur vaccination !!"
   homepage "https://github.com/bhaskerstreet/vaccine-availability-notifier"
-  url "https://github.com/bhaskernitt/vaccine-availability-notifier/archive/0.0.16.tar.gz"
-  version "0.0.16"
+  url "https://github.com/bhaskernitt/vaccine-availability-notifier/archive/0.0.18.tar.gz"
+  version "0.0.18"
   sha256 "3060b08015274fea92d688a6d8b1a1d667a6acbdd2767875b9c7926b57050066"
   depends_on "python@3.9"
   
